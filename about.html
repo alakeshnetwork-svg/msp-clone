@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | MSP Square</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --primary: #004a99; --secondary: #00d4ff; --dark: #001e3c; --light: #f8fafc; --white: #ffffff; --text: #334155; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { color: var(--text); background: var(--white); line-height: 1.6; }
+        .container { width: 90%; max-width: 1200px; margin: auto; }
+
+        /* Header (Standardized) */
+        header { background: var(--white); height: 80px; display: flex; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .nav-flex { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        .logo { font-size: 24px; font-weight: 800; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+        .nav-links { display: flex; gap: 30px; align-items: center; list-style: none; }
+        .nav-links a { text-decoration: none; font-weight: 600; color: var(--dark); font-size: 15px; }
+
+        /* About Section */
+        .about-hero { padding: 100px 0; background: var(--light); text-align: center; }
+        .about-hero h1 { font-size: 3rem; color: var(--dark); margin-bottom: 20px; }
+        .about-hero p { font-size: 1.2rem; max-width: 800px; margin: auto; color: var(--text); }
+
+        .mission { padding: 80px 0; display: flex; flex-wrap: wrap; gap: 50px; align-items: center; }
+        .mission-text { flex: 1; min-width: 300px; }
+        .mission-text h2 { color: var(--primary); margin-bottom: 20px; font-size: 2rem; }
+        .mission-img { flex: 1; min-width: 300px; background: var(--primary); height: 350px; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 5rem; }
+
+        .values { padding: 80px 0; background: var(--dark); color: white; text-align: center; }
+        .value-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 50px; }
+        .value-card { padding: 30px; background: rgba(255,255,255,0.05); border-radius: 10px; transition: 0.3s; }
+        .value-card:hover { background: rgba(255,255,255,0.1); }
+        .value-card i { font-size: 40px; color: var(--secondary); margin-bottom: 20px; }
+
+        footer { background: var(--dark); color: white; padding: 40px 0; text-align: center; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-flex">
+            <a href="index.html" class="logo">MSP<span>SQUARE</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nextgenmsp.html">NextGenMSP</a></li>
+                <li><a href="about.html" style="color: var(--primary);">About</a></li>
+                <li><a href="#" style="background: var(--primary); color: white; padding: 10px 20px; border-radius: 5px;">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="container">
+            <h1>Engineered for MSP Success</h1>
+            <p>We are the execution partner for modern Managed Service Providers, providing the global talent and AI tools needed to scale without boundaries.</p>
+        </div>
+    </section>
+
+    <section class="mission container">
+        <div class="mission-text">
+            <h2>Our Story</h2>
+            <p>MSP Square was founded with a single mission: to help MSPs bridge the gap between technical capability and operational excellence. We realized that many MSPs struggle to scale because they are trapped in reactive, manual workflows.</p>
+            <br>
+            <p>By combining offshore delivery with onshore quality control and cutting-edge automation, we provide a "Plug-and-Play" operation that lets MSP owners focus on strategy and sales.</p>
+        </div>
+        <div class="mission-img">
+            <i class="fas fa-users-cog"></i>
+        </div>
+    </section>
+
+    <section class="values">
+        <div class="container">
+            <h2>Our Core Values</h2>
+            <div class="value-grid">
+                <div class="value-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Transparency</h3>
+                    <p>We act as an extension of your team with full visibility into our workflows and performance.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Innovation</h3>
+                    <p>We constantly integrate AI and automation to keep our partners ahead of the curve.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-shield-check"></i>
+                    <h3>Accountability</h3>
+                    <p>We take ownership of our work and adhere to the strictest security frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MSP Square. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
