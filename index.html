@@ -21,7 +21,7 @@
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
         body { color: var(--text); background: var(--white); line-height: 1.6; overflow-x: hidden; }
-        a { text-decoration: none; color: inherit; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
         ul { list-style: none; }
 
         /* --- NAVIGATION --- */
@@ -44,7 +44,7 @@
 
         .nav-links { display: flex; gap: 30px; align-items: center; }
         .nav-item { position: relative; padding: 10px 0; }
-        .nav-link { font-weight: 600; font-size: 15px; color: var(--dark); cursor: pointer; transition: var(--transition); }
+        .nav-link { font-weight: 600; font-size: 15px; color: var(--dark); cursor: pointer; }
         .nav-link:hover { color: var(--primary); }
 
         /* Mega Menu */
@@ -70,7 +70,7 @@
         .nav-item:hover .mega-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
 
         .menu-col h4 { color: var(--primary); font-size: 13px; text-transform: uppercase; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        .menu-col a { display: block; padding: 8px 0; font-size: 14px; transition: var(--transition); }
+        .menu-col a { display: block; padding: 8px 0; font-size: 14px; color: var(--text); }
         .menu-col a:hover { color: var(--secondary); padding-left: 5px; }
 
         .btn-cta { background: var(--primary); color: white !important; padding: 12px 24px; border-radius: 5px; font-weight: 700; transition: var(--transition); }
@@ -135,14 +135,14 @@
 
     <header>
         <div class="container">
-            <a href="#" class="logo">MSP<span>SQUARE</span></a>
+            <a href="index.html" class="logo">MSP<span>SQUARE</span></a>
             
             <div class="mobile-toggle" id="mobile-btn">
                 <i class="fas fa-bars"></i>
             </div>
 
             <ul class="nav-links" id="nav-menu">
-                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item">
                     <span class="nav-link">Services <i class="fas fa-chevron-down" style="font-size: 10px;"></i></span>
                     <div class="mega-menu">
@@ -150,7 +150,7 @@
                             <h4>Managed Core</h4>
                             <a href="#">24/7 Global NOC</a>
                             <a href="#">Managed Helpdesk</a>
-                            <a href="#">Infrastructure Management</a>
+                            <a href="nextgenmsp.html">NextGenMSP Framework</a>
                         </div>
                         <div class="menu-col">
                             <h4>Security & AI</h4>
@@ -160,7 +160,7 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="#" class="nav-link">NextGenMSP</a></li>
+                <li><a href="nextgenmsp.html" class="nav-link">NextGenMSP</a></li>
                 <li><a href="#" class="nav-link">About</a></li>
                 <li><a href="#" class="btn-cta">Free Savings Audit</a></li>
             </ul>
@@ -171,7 +171,7 @@
         <h1>Scale Smarter with <br><span>Next-Gen MSP Operations</span></h1>
         <p>Leverage AI-powered NOC, SOC, and white-label support to reduce costs by up to 40% while delivering enterprise-grade reliability.</p>
         <div class="hero-btns">
-            <a href="#" class="btn btn-blue">Calculate Your Savings</a>
+            <a href="nextgenmsp.html" class="btn btn-blue">Explore NextGenMSP</a>
             <a href="#" class="btn btn-white">Explore Our NOC</a>
         </div>
     </section>
@@ -192,21 +192,25 @@
                 <i class="fas fa-server"></i>
                 <h3>Managed IT (NOC)</h3>
                 <p>Consistent monitoring and predictable response times aligned to your specific RMM/PSA tools and SLAs.</p>
+                <a href="nextgenmsp.html" style="color: var(--primary); font-weight: 700; font-size: 14px; margin-top: 15px; display: block;">Learn More →</a>
             </div>
             <div class="card">
                 <i class="fas fa-user-shield"></i>
                 <h3>Managed Security (SOC)</h3>
                 <p>Enterprise-grade threat detection, incident response, and continuous vulnerability management.</p>
+                <a href="#" style="color: var(--primary); font-weight: 700; font-size: 14px; margin-top: 15px; display: block;">Learn More →</a>
             </div>
             <div class="card">
                 <i class="fas fa-robot"></i>
                 <h3>AI & Automation</h3>
                 <p>Practical AI implementation that acts as an operational multiplier, enhancing productivity across your team.</p>
+                <a href="#" style="color: var(--primary); font-weight: 700; font-size: 14px; margin-top: 15px; display: block;">Learn More →</a>
             </div>
             <div class="card">
                 <i class="fas fa-cloud"></i>
                 <h3>Managed Cloud</h3>
                 <p>Automation-first cloud governance for AWS, Azure, and Google Cloud to optimize performance and costs.</p>
+                <a href="#" style="color: var(--primary); font-weight: 700; font-size: 14px; margin-top: 15px; display: block;">Learn More →</a>
             </div>
         </div>
     </section>
@@ -220,6 +224,7 @@
             <div class="footer-col">
                 <h4>Services</h4>
                 <ul>
+                    <li><a href="nextgenmsp.html">NextGenMSP Model</a></li>
                     <li>White-Label NOC</li>
                     <li>Security Operations</li>
                     <li>Dedicated Helpdesk</li>
@@ -229,7 +234,6 @@
                 <h4>Resources</h4>
                 <ul>
                     <li>Case Studies</li>
-                    <li>NextGenMSP Model</li>
                     <li>Savings Calculator</li>
                 </ul>
             </div>
