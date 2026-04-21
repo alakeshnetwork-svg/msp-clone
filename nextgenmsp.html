@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGenMSP | MSP Square Operating Model</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Shared Styles */
+        :root { --primary: #004a99; --secondary: #00d4ff; --dark: #001e3c; --light: #f8fafc; --white: #ffffff; --text: #334155; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { color: var(--text); background: var(--white); line-height: 1.6; }
+        .container { width: 90%; max-width: 1200px; margin: auto; }
+
+        /* Header (Same as Index) */
+        header { background: var(--white); height: 80px; display: flex; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .nav-flex { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        .logo { font-size: 24px; font-weight: 800; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+        .nav-links { display: flex; gap: 30px; align-items: center; list-style: none; }
+        .nav-links a { text-decoration: none; font-weight: 600; color: var(--dark); font-size: 15px; }
+
+        /* NextGen Content */
+        .page-header { padding: 100px 0 60px; background: var(--dark); color: white; text-align: center; }
+        .page-header h1 { font-size: 3rem; margin-bottom: 20px; }
+        .page-header p { font-size: 1.2rem; opacity: 0.8; max-width: 800px; margin: auto; }
+
+        .comparison-section { padding: 80px 0; background: var(--white); }
+        .table-wrapper { overflow-x: auto; margin-top: 40px; }
+        table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        th, td { padding: 20px; text-align: left; border-bottom: 1px solid #eee; }
+        th { background: var(--primary); color: white; text-transform: uppercase; font-size: 14px; }
+        tr:nth-child(even) { background: var(--light); }
+        .feature-name { font-weight: 700; color: var(--primary); width: 25%; }
+
+        .outcomes { padding: 80px 0; background: var(--light); }
+        .outcome-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+        .outcome-card { background: white; padding: 30px; border-radius: 10px; border-left: 5px solid var(--secondary); }
+        .outcome-card h3 { color: var(--dark); margin-bottom: 10px; }
+
+        footer { background: var(--dark); color: white; padding: 40px 0; text-align: center; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-flex">
+            <a href="index.html" class="logo">MSP<span>SQUARE</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nextgenmsp.html" style="color: var(--secondary);">NextGenMSP</a></li>
+                <li><a href="#" class="btn-cta" style="background: var(--primary); color: white; padding: 10px 20px; border-radius: 5px;">Get Started</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>The NextGenMSP Operating Model</h1>
+            <p>Moving beyond reactive operations to a structured global delivery framework powered by AI and automation.</p>
+        </div>
+    </section>
+
+    <section class="comparison-section">
+        <div class="container">
+            <h2 style="text-align: center;">Traditional MSP vs. NextGenMSP</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Traditional MSP</th>
+                            <th>Next Generation MSP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-name">Operations</td>
+                            <td>Reactive, fire-fighting mode</td>
+                            <td>Process-led, proactive delivery</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Workflows</td>
+                            <td>Manual task execution</td>
+                            <td>Automation-first execution</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Growth</td>
+                            <td>Hiring-constrained scaling</td>
+                            <td>Scalable global delivery</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Efficiency</td>
+                            <td>High operational overhead</td>
+                            <td>Optimized cost structure</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="outcomes">
+        <div class="container">
+            <h2 style="text-align: center;">Outcomes You Can Expect</h2>
+            <div class="outcome-grid">
+                <div class="outcome-card">
+                    <h3>4x Productivity</h3>
+                    <p>Deliver more services with the same team through intelligent workflows.</p>
+                </div>
+                <div class="outcome-card">
+                    <h3>Predictability</h3>
+                    <p>Standardized processes ensure repeatable, reliable service delivery.</p>
+                </div>
+                <div class="outcome-card">
+                    <h3>Cost Control</h3>
+                    <p>A blended global model balances quality with sustainable efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MSP Square. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
