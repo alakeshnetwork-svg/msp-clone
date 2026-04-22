@@ -1,12 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><title>AI & Automation | MSP Square</title>
-    <style>body { font-family: sans-serif; padding: 100px; text-align: center; background: #f1f5f9; }</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & Automation Solutions | MSP Square</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #00d4ff;
+            --primary-dark: #004a99;
+            --dark-bg: #020617;
+            --card-bg: #0f172a;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --transition: all 0.3s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: var(--dark-bg); color: var(--text-main); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+
+        /* --- NAVIGATION --- */
+        header {
+            background: rgba(2, 6, 23, 0.95);
+            height: 80px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .container { width: 90%; max-width: 1200px; margin: auto; }
+        .nav-flex { display: flex; justify-content: space-between; align-items: center; }
+
+        .logo { font-size: 24px; font-weight: 800; color: var(--primary-dark); }
+        .logo span { color: var(--primary); }
+
+        .btn-outline {
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        .btn-outline:hover { background: var(--primary); color: var(--dark-bg); }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            padding: 180px 0 100px;
+            background: radial-gradient(circle at top right, rgba(0, 212, 255, 0.1), transparent);
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 20px; letter-spacing: -1px; }
+        .hero h1 span { color: var(--primary); }
+        .hero p { font-size: 1.25rem; color: var(--text-muted); max-width: 800px; margin: 0 auto 40px; }
+
+        /* --- FEATURES GRID --- */
+        .features { padding: 100px 0; }
+        .section-title { text-align: center; margin-bottom: 60px; }
+        .section-title h2 { font-size: 2.5rem; margin-bottom: 15px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .feature-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: var(--transition);
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .feature-card i { font-size: 45px; color: var(--primary); margin-bottom: 25px; }
+        .feature-card h3 { font-size: 1.5rem; margin-bottom: 15px; }
+        .feature-card p { color: var(--text-muted); }
+
+        /* --- CTA SECTION --- */
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary-dark), #002a5a);
+            padding: 80px 40px;
+            border-radius: 30px;
+            text-align: center;
+            margin: 100px 0;
+        }
+        .btn-main {
+            background: var(--primary);
+            color: var(--dark-bg);
+            padding: 16px 40px;
+            border-radius: 8px;
+            font-weight: 700;
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        footer { text-align: center; padding: 60px 0; border-top: 1px solid rgba(255,255,255,0.1); color: var(--text-muted); }
+    </style>
 </head>
 <body>
-    <h1>AI & Automation</h1>
-    <p>Leveraging LLMs and automation to multiply engineer productivity.</p>
-    <a href="index.html">Back Home</a>
+
+    <header>
+        <div class="container nav-flex">
+            <a href="index.html" class="logo">MSP<span>SQUARE</span></a>
+            <a href="index.html" class="btn-outline">Back to Home</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>AI & <span>Hyper-Automation</span></h1>
+            <p>We don't just use AI tools; we build intelligent workflows that act as a force multiplier for your engineering team, reducing manual effort by up to 60%.</p>
+        </div>
+    </section>
+
+    <section class="features container">
+        <div class="section-title">
+            <h2>Next-Gen Intelligence</h2>
+            <p style="color: var(--text-muted);">Transforming traditional MSP operations into an AI-first powerhouse.</p>
+        </div>
+
+        <div class="grid">
+            <div class="feature-card">
+                <i class="fas fa-brain"></i>
+                <h3>Smart Ticket Triage</h3>
+                <p>Leverage LLMs to automatically categorize, prioritize, and route tickets based on sentiment and urgency, ensuring your best engineers focus on the right problems.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-code"></i>
+                <h3>Automated Scripting</h3>
+                <p>Generate secure, optimized PowerShell and Bash scripts for mass deployment in seconds. Our AI ensures best practices and security compliance are baked in.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Predictive Analytics</h3>
+                <p>Move beyond monitoring. Our AI analyzes historical patterns to predict hardware failures and bandwidth bottlenecks before they impact your clients.</p>
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <h2>Ready to Automate Your Operations?</h2>
+            <p>Stop fighting ticket fires and start scaling with intelligent systems.</p>
+            <a href="contact.html" class="btn-main">Get a Free Automation Audit</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MSP Square. AI-Powered Excellence.</p>
+    </footer>
+
 </body>
 </html>
